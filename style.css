@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+
+@font-face {
+  font-family: 'Didact Gothic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Didact Gothic Regular'), url('DidactGothic-Regular.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Didact Gothic Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Didact Gothic Medium'), url('DidactGothic.woff') format('woff');
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+body {
+  background: #5D8C84;
+  box-sizing: border-box;
+  padding-top: 0vh;
+  min-width: 100vw;
+  margin: auto;
+  font-size: 120%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  width: 94vw;
+  z-index: 25;
+  color: #260101;
+}
+
+.tabs label {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.65vh 1.65vw;
+  margin-right: 4px;
+  cursor: pointer;
+  background-color: #B8D3D9;
+  transition: background ease 0.7s;
+}
+
+
+.tabs .tab {
+  order: 9;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  min-height: 200vh;
+  display: none;
+  background-color: whitesmoke;
+  padding-left: 20vw;
+  padding-top: 15px;
+
+
+  box-shadow: -10px 10px 0px 0px black;
+  border-top-right-radius: 10% 10%;
+}
+
+.tabs input[type=radio] {
+  display: none;
+}
+
+.tabs input[type=radio]:checked+label {
+  background: whitesmoke;
+}
+
+.tabs input[type=radio]:checked+label+.tab {
+  display: block;
+}
+
+@media (max-width: 465px) {
+
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+
+  .tabs label {
+    width: 100%;
+    margin-left: 50px;
+  }
+}
+
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  display: block;
+  background-color: #B8D3D9;
+  color: #260101;
+  cursor: pointer;
+  padding: 16px;
+  width: 50vw;
+  margin: 0;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  box-shadow: -5px 5px 0px 0px black;
+  border-radius: 0%;
+}
+
+.shell {
+  width: 90vw;
+  margin-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.shell .collapsible {
+  display: block;
+  color: #260101;
+  cursor: pointer;
+  padding: 8px;
+  width: 27vw;
+  height: 10vh;
+  margin: 0;
+  border: 2px solid whitesmoke;
+  outline: none;
+  font-size: 17px;
+  box-shadow: 0px 0px 0px 0px black;
+  text-align: left;
+
+}
+
+.shell .content {
+  margin-left: 0;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+  background-color: #5D8C84;
+  color: white;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0;
+  display: none;
+  background-color: whitesmoke;
+  height: 80vh;
+  width: 95vw;
+  margin-left: -20vw;
+  margin-bottom: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.pic {
+  position: absolute;
+  top: 0%;
+  right: 12%;
+  transform: rotate(17deg);
+  opacity: 0.3;
+}
+
+.pic:hover {
+  opacity: 1;
+}
+
+h1 {
+  font-family: 'Nanum Gothic', sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 20pt;
+  margin: 3pt;
+}
+
+@keyframes name {
+  from {
+    margin-top: 4.3vh;
+  }
+
+  to {
+    margin-top: 7.9vh;
+  }
+}
+
+h3 {
+  z-index: 100000;
+  position: absolute;
+  font-size: 30pt;
+  margin-left: 55%;
+  margin-top: 4.3vh;
+  color: #5D8C84;
+  animation: name 3s ease-out 2s forwards;
+}
+
+p {
+  margin: 3pt;
+  font-size: 14pt;
+  width: 50vw;
+}
+
+
+img{
+  width: 100%;
+}
+figure {
+  border: 1px solid black;
+  margin-left: -16vw;
+  margin-top: 8vh;
+  position: absolute;
+  width: 10vw;
+  text-align: center;
+  box-shadow: -5px 5px 0px 0px black;
+  font-size: 12pt;
+}
+figcaption{
+  padding: 10px;
+  margin-top: 0;
+}
+
+.poem {
+  font-family: 'Alegreya', serif;
+  text-align: center;
+  margin: auto;
+  margin-left: 20vw;
+  width: 50vw;
+}
+
+p.poem{
+  text-align: center;
+}
+
+/* CHECKBOX STYLE */
+button {
+  margin-left: 90%;
+}
+
+/*    FADE IN ON PAGE LOAD
+p,
+h1, .collapsible{
+  animation:fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+      line-height: 0%;
+  }
+  100% {
+      opacity: 1;
+      line-height: 150%;
+  }
+}
+*/
