@@ -251,6 +251,9 @@ p.poem{
 button {
   margin-left: 90%;
 }
+.github-card{
+  z-index: 10000000;
+}
 
 /*    FADE IN ON PAGE LOAD
 p,

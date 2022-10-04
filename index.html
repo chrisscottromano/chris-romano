@@ -510,10 +510,10 @@
     <label for="tabfive" id="tab5">Music</label>
     <div class="tab">
       <button type="button" class="collapsible">If Memory Serves</button>
-      <div class="content">
-        <!-- SOUNDCLOUD EMBED COMMENTED OUT —— PROBLEM WITH API ETERNALLY LOADING
+      <div class="content" style="width: 95%;margin:auto">
+        <!-- SOUNDCLOUD EMBED COMMENTED OUT —— PROBLEM WITH API ETERNALLY LOADING-->
 
-        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
+        <iframe width="85%" height="450" scrolling="no" frameborder="no" allow="autoplay"
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1470420871&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
         <div
           style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
@@ -522,13 +522,16 @@
             href="https://soundcloud.com/user-761021381-323138458/sets/if-memory-serves" title="If memory serves"
             target="_blank" style="color: #cccccc; text-decoration: none;">If memory serves</a>
         </div>
-      -->
       </div>
-
-
-
-
     </div>
+
+        <!--TAB 6 CODE-->
+        <input type="radio" name="tabs" id="tabsix">
+        <label for="tabsix" id="tab6">Code</label>
+        <div class="tab">
+          <div class="github-card" data-github="chrisscottromano/vas-eat" data-width="400" data-height="" data-theme="default" style="z-index: 1000000000000"></div>
+          <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+        </div>
 
 
 
@@ -541,6 +544,7 @@
     const tab3 = document.getElementById("tab3");
     const tab4 = document.getElementById("tab4");
     const tab5 = document.getElementById("tab5");
+    const tab6 = document.getElementById("tab6");
   </script>
   <!--
   <script>window.stop()</script>
